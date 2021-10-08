@@ -1,8 +1,7 @@
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container {
-  width: 1000px;
-  height: 900px;
+  width: 850px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -12,6 +11,10 @@
   border-radius: 35px;
   background-color: rgba(114, 62, 100, 0.8);
   padding-top: 1px;
+}
+
+.imgresponsive {
+  width: 100%;
 }
 
 /* Hide the images by default */
@@ -104,7 +107,6 @@
  @media screen and (max-width: 600px) {
   .slideshow-container {
     width: 80%;
-    height: 40%;
   }
   .imgresponsive {
       width: 100%;
