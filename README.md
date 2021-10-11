@@ -1,2 +1,2 @@
 # TotoShop
-TotoShop is a commercial mock-up website made for a school project
+TotoShop is a showcase website made for a school project
