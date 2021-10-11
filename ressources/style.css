@@ -333,13 +333,24 @@ body {
   background-color: rgba(145,83,238,0.8);
   border-radius: 15px;
   border: solid 2px black;
-  height: 380px;
+  height: 420px;
   position: relative;
   margin-bottom: 15px;
 }
 
 .productcontainer:last-child {
   margin-bottom: 0px;
+}
+
+#productimg {
+  position: absolute;
+}
+
+#productcore {
+  position: absolute;
+  margin-left: 380px;
+  max-height: 350px;
+  overflow: auto;
 }
 
 .productcontainer img {
@@ -367,15 +378,18 @@ body {
 
 .productprice {
   position: absolute;
-  left: 38%;
+  left: 0;
   font-size: 35px;
   bottom: 0;
+  margin-bottom: 1%;
+  margin-left: 2%;
 }
 
 .purchasebutton {
   position: absolute;
-  right: 2%;
-  bottom: 4%;
+  right: 0;
+  margin-right: 2%;
+  bottom: 2%;
   background-color: skyblue;
   height: 50px;
   width: 140px;
@@ -397,7 +411,7 @@ body {
   font-size: 20px;
   position: absolute;
   right: 17%;
-  bottom: 2%;
+  bottom: 1%;
 }
 
 .instock {
@@ -415,12 +429,21 @@ body {
   }
   .productcontainer {
     width: 100%;
-    height: 235px;
+    height: 220px;
   }
+
   .productcontainer img {
-    width: 50%;
-    height: 50%;
+    width: 35vw;
+    height: 35vw;
+    max-height: 170px;
   }
+
+  #productcore {
+    margin-left: 40vw;
+    max-height: 35vw;
+    max-height: 170px;
+  }
+
   .producttitle {
     margin-top: 2vw;
     font-size: 4vw;
