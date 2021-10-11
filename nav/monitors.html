@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+html {
+  background-image: url("../ressources/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="..\ressources\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>TotoShop - #1 High Tech Provider</title>
+</head>
+
+<header>
+    <div class="topbar" id="myTopbar" topmargin="0">
+        <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <div class="productdropdown active">
+            <button class="productdropbtn">PRODUCTS<i class="fa fa-caret-down" style="margin-left:9px"></i></button>
+            <div class="productdropdown-content">
+                <a href="monitors.html">Monitors</a>
+                <a href="keyboards.html">Keyboards</a>
+                <a href="mice.html">Mice</a>
+                <a href="headsets.html">Headsets</a>
+                <a href="cpus.html">CPUs</a>
+                <a href="gpus.html">GPUs</a>
+                <a href="hddssd.html">Disks</a>
+            </div>
+        </div>
+        <a href="customerservice.html"><i class="fa fa-users" aria-hidden="true"></i> CUSTOMER SERVICE</a>
+        <a href="about.html"><i class="fa fa-info" aria-hidden="true"></i> ABOUT</a>
+        <div class="topbaronright">
+            <a href="login.html"><i class="fa fa-fw fa-user" aria-hidden="true"></i>LOGIN</a>
+            <a href="basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopbar");
+  if (x.className === "topbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "topbar";
+  }
+}
+</script>
+</header>
+
+<body>
+	<div id="productstab">
+        <div class="productcontainer">
+            <img src="../ressources/products/monitors/1_odysseyg7_samsung.png">
+            <p class=producttitle>Samsung Odyssey G7</p>
+            <p class="productspecs">• 240Hz<br>• 1ms latency<br>• QLED HDR600<br>• WQHD</p>
+            <p class="productspecs">For your adventure, every single detail counts. Odyssey G7 is the perfect screen for your gaming setup.</p>
+            <p class="productprice">$599.99</p>
+            <p class="stock instock">In stock</p>
+            <button class="purchasebutton"><i class="fa fa-cart-plus" aria-hidden="true"></i> Purchase</button>
+        </div>
+        <div class="productcontainer">
+            <img src="../ressources/products/monitors/2_EX2710Q_benq.png">
+            <p class=producttitle>BenQ EX2710Q</p>
+            <p class="productspecs">• 165Hz<br>• 1ms latency<br>• 2K 16:19 HDR IPS<br>• QHD</p>
+            <p class="productspecs">EX2710Q empowers transformative gaming. Leave the ordinary behind and enter new worlds with fully immersive audiovisual excellence.</p>
+            <p class="productprice">$499.99</p>
+            <p class="stock outofstock">Out of stock</p>
+            <button class="purchasebutton"><i class="fa fa-cart-plus" aria-hidden="true"></i> Purchase</button>
+        </div>
+        <div class="productcontainer">
+            <img src="../ressources/products/monitors/3_27i_omen.png">
+            <p class=producttitle>Omen 27i</p>
+            <p class="productspecs">• 165Hz<br>• 1ms latency<br>• HDR IPS<br>• QHD 2560x1440</p>
+            <p class="productspecs">Who wants to choose between speed and picture quality? Not you. So, enjoy the game with a refreshingly speedy 165Hz refresh rate!</p>
+            <p class="productprice">$419.99</p>
+            <p class="stock instock">In stock</p>
+            <button class="purchasebutton">Purchase</button>
+        </div>
+        <div class="productcontainer">
+            <img src="../ressources/products/monitors/4_zowieXL2411P_benq.png">
+            <p class=producttitle>BenQ Zowie XL2411P</p>
+            <p class="productspecs">• 144hz<br>• 1ms latency<br>• HDR IPS<br>• FHD1080p</p>
+            <p class="productspecs">The go-to monitor for every kind of gamers!</p>
+            <p class="productprice">$149.99</p>
+            <p class="stock instock">In stock</p>
+            <button class="purchasebutton">Purchase</button>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <ul class="bottombar">
+        <li class="libottombar"><a href="legalnotice.html">Legal notice</a></li>
+        <li class="libottombar"><a href="pivacypolicy.html">Privacy policy</a></li>
+        <li class="libottombar"><a href="contact.html">Contact</a></li>
+    </ul>
+</footer>
+
+</html>
