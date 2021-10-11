@@ -315,6 +315,35 @@ body {
 /* customer service container ends here */
 
 /* Product pages */
+#productsnav {
+  background-color: rgba(102, 51, 153, 0.9);
+  margin-bottom: 30px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  width: max-content;
+  list-style-type: none;
+  position: fixed;
+  left: 20px;
+}
+
+#productsnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#productsnav li a:hover:not(.active) {
+  background-color: white;
+  color: black;
+}
+
+#productsnav li a.active {
+  color: blue;
+}
+
 #productstab {
   overflow: hidden;
   display: block;
@@ -423,11 +452,16 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  #productsnav {
+    display: none;
+  }
+
   #productstab {
     width: 70%;
     padding: 3vw;
   }
   .productcontainer {
+
     width: 100%;
     height: 220px;
   }
