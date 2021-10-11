@@ -20,7 +20,8 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
-}
+  border-radius: 15px;
+ }
 
 /* Next & previous buttons */
 .prev, .next {
