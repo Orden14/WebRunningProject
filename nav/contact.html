@@ -33,6 +33,7 @@ html {
                 <a href="hddssd.html">Disks</a>
             </div>
         </div>
+        <a href="webhosting.html"><i class="fa fa-cloud" aria-hidden="true"></i> HOSTING SERVICES</a>
         <a href="customerservice.html"><i class="fa fa-users" aria-hidden="true"></i> CUSTOMER SERVICE</a>
         <a href="about.html"><i class="fa fa-info" aria-hidden="true"></i> ABOUT</a>
         <div class="topbaronright">
@@ -56,7 +57,7 @@ function myFunction() {
 
 <body>
 	<div id="homepagetextcontainer">
-		<p class="mainpagebody">Any question? Contact us or use our contact form!<br/><u>orden.nox@gmail.com</u></p>
+		<p class="mainpagebody">Any question? Mail us or use our contact form!<br/><u>orden.nox@gmail.com</u></p>
 	</div>
 
 <div id="homepagetextcontainer" style="padding:10px">
@@ -65,15 +66,18 @@ function myFunction() {
     <input type="text" id="name" name="fullname" placeholder="Your name..">
     <label for="lname" style="color:white">E-mail</label>
     <input type="text" id="mail" name="email" placeholder="Your email..">
-    <label for="country" style="color:white">Country</label>
-    <select id="country" name="country">
-      <option value="france">France</option>
-      <option value="uk">United Kingdoms</option>
-      <option value="belgium">Belgium</option>
+    <label for="subject" style="color:white">Inquiry</label>
+    <select id="inquiry" name="inquiry">
+        <option value="none">How can we help you?</option>
+        <option value="orderissue">There is an issue with my order</option>
+        <option value="paymentissue">There is an issue with the payment process</option>
+        <option value="deliveryissue">There is an issue with the delivery</option>
+        <option value="account">Account management</option>
+        <option value="data">I wan't all my data to be deleted</option>
+        <option value="other">Other (specify in your message)</option>
     </select>
-
-    <label for="subject" style="color:white">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="subject" style="color:white">Message</label>
+    <textarea id="subject" name="subject" placeholder="Specify your inquiry.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
