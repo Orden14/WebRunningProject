@@ -95,11 +95,13 @@ body {
 .topbar a:hover, .productdropdown:hover .productdropbtn {
   background-color: white;
   color: rgba(140, 3, 252, 0.95);
+  transition: color 350ms linear, background-color 700ms linear;
 }
 
 .productdropdown-content a:hover {
   background-color: white;
   color: rgba(140, 3, 252, 0.95);
+  transition: color 350ms linear, background-color 700ms linear;
 }
 
 .productdropdown-content a:last-child:hover {
@@ -200,6 +202,7 @@ body {
 .libottombar a:hover {
   background-color: white;
   color: rgba(140, 3, 252, 1);
+  transition: color 150ms linear, background-color 700ms linear;
 }
 
 @media screen and (max-width: 600px) {
@@ -371,7 +374,8 @@ body {
 
 
 #productsnav li a:hover:not(.active) {
-  background-color: darkslateblue;
+  background-color: rgba(110, 34, 90, 0.8);
+  transition: background-color 550ms linear;
 }
 
 #productstab {

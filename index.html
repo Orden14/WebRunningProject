@@ -16,11 +16,13 @@ html {
 	<link rel="stylesheet" href="ressources\slideshow.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 	<title>TotoShop - #1 High Tech Provider</title>
+	<script src="ressources\main.js"></script>
+	<script src="ressources\slideShow.js"></script>
 </head>
 
 <header>
 	<div class="topbar" id="myTopbar" topmargin="0">
-		<a href="index.html" class="active"><i class="fa fa-home" aria-hidden="true"></i></a>
+		<a href="index.html" class="active">TotoShop <i class="fa fa-home" aria-hidden="true"></i></a>
 		<div class="productdropdown">
 			<button class="productdropbtn">PRODUCTS<i class="fa fa-caret-down" style="margin-left:9px"></i></button>
 			<div class="productdropdown-content">
@@ -40,23 +42,11 @@ html {
 			<a href="./nav/login.html"><i class="fa fa-fw fa-user" aria-hidden="true"></i>LOGIN</a>
 			<a href="./nav/basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
 		</div>
-		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topBar()">&#9776;</a>
 	</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopbar");
-  if (x.className === "topbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "topbar";
-  }
-}
-</script>
 </header>
 
 <body>
-	
 	<div id="homepagetextcontainer">
 		<p class="mainpagebody">Need quality products? TotoShop.com is the way to go for gamers! <br/> The fastest international shipping and the best gaming gears, welcome to our website.</p>
 	</div>
@@ -84,54 +74,8 @@ function myFunction() {
   	<span class="dot" onclick="currentSlide(2)"></span>
  	 <span class="dot" onclick="currentSlide(3)"></span>
 	</div>
-
-	<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-	</script>
-	<script>
-var slideIndexx = 0;
-autoSlides();
-
-function autoSlides() {
-  var j;
-  var slides = document.getElementsByClassName("mySlides");
-  for (j = 0; j < slides.length; j++) {
-    slides[j].style.display = "none";
-  }
-  slideIndexx++;
-  if (slideIndexx > slides.length) {slideIndexx = 1}
-  slides[slideIndexx-1].style.display = "block";
-  setTimeout(autoSlides, 5000);
-}
-	</script>
-
+	<script>autoSlides();</script>
+	<script>showSlides(slideIndex);</script>
 <!-- End of the slideshow -->
 
 	<div id="homepagetextcontainer">
@@ -150,5 +94,4 @@ function autoSlides() {
 		<li class="libottombar"><a href="./nav/contact.html">Contact</a></li>
 	</ul>
 </footer>
-
 </html>

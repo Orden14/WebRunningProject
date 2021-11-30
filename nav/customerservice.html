@@ -15,11 +15,12 @@ html {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <title>TotoShop - #1 High Tech Provider</title>
+    <script src="..\ressources\main.js"></script>
 </head>
 
 <header>
     <div class="topbar" id="myTopbar" topmargin="0">
-        <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="../index.html">TotoShop <i class="fa fa-home" aria-hidden="true"></i></a>
         <div class="productdropdown">
             <button class="productdropbtn">PRODUCTS<i class="fa fa-caret-down" style="margin-left:9px"></i></button>
             <div class="productdropdown-content">
@@ -39,19 +40,8 @@ html {
             <a href="login.html"><i class="fa fa-fw fa-user" aria-hidden="true"></i>LOGIN</a>
             <a href="basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
         </div>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topBar()">&#9776;</a>
     </div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopbar");
-  if (x.className === "topbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "topbar";
-  }
-}
-</script>
 </header>
 
 <body>
