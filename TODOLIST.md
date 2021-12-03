@@ -1,0 +1,4 @@
+--> Change login page
+--> Change products pages design
+--> Add cookies banner
+--> Change the privacy policy

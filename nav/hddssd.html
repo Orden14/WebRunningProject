@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+html {
+  background-image: url("../ressources/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="..\ressources\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>WebRunning - Shop</title>
+    <script src="..\ressources\main.js"></script>
+</head>
+
+<header>
+    <div class="topbar" id="myTopbar" topmargin="0">
+        <a href="../index.html">WebRunning <i class="fa fa-home" aria-hidden="true"></i></a>
+        <div class="productdropdown active">
+            <button class="productdropbtn">PRODUCTS<i class="fa fa-caret-down" style="margin-left:9px"></i></button>
+            <div class="productdropdown-content">
+                <a href="monitors.html">Monitors</a>
+                <a href="keyboards.html">Keyboards</a>
+                <a href="mice.html">Mice</a>
+                <a href="headsets.html">Headsets</a>
+                <a href="cpus.html">CPUs</a>
+                <a href="gpus.html">GPUs</a>
+                <a href="hddssd.html">Disks</a>
+            </div>
+        </div>
+        <a href="webhosting.html"><i class="fa fa-cloud" aria-hidden="true"></i> HOSTING SERVICES</a>
+        <a href="customerservice.html"><i class="fa fa-users" aria-hidden="true"></i> CUSTOMER SERVICE</a>
+        <a href="about.html"><i class="fa fa-info" aria-hidden="true"></i> ABOUT</a>
+        <div class="topbaronright">
+            <a href="login.html"><i class="fa fa-fw fa-user" aria-hidden="true"></i>LOGIN</a>
+            <a href="basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topBar()">&#9776;</a>
+    </div>
+</header>
+
+<body>
+	<div id="productstab">
+        <ul id="productsnav">
+            <li><a href="monitors.html">Monitors</a></li>
+            <li><a href="keyboards.html">Keyboards</a></li>
+            <li><a href="mice.html">Mice</a></li>
+            <li><a href="headsets.html">Headsets</a></li>
+            <li><a href="cpus.html">CPUs</a></li>
+            <li><a href="gpus.html">GPUs</a></li>
+            <li><a href="hddssd.html" class="activep">Disks</a></li>   
+        </ul>
+        <div class="productcontainer">
+            <div id="productimg">
+              <img src="../ressources/products/disks/1_mp510_corsair.png">
+            </div>
+            <div id="productcore">
+                <p class="producttitle">Corsair MP510 SSD</p>
+                <p class="productspecs">• 480 Go<br>• 3.480 Mo/s reading<br>• 2.000 Mo/s writing<br>• M.2 NVMe PCIe Gen3 x 4 interface</p>
+            </div>
+                <p class="productprice">$79.99</p>
+                <p class="stock instock">In stock</p>
+                <button class="purchasebutton"><i class="fa fa-cart-plus" aria-hidden="true"></i> Purchase</button>   
+        </div>
+        <div class="productcontainer">
+            <div id="productimg">
+              <img src="../ressources/products/disks/2_mp400_corsair.png">
+            </div>
+            <div id="productcore">
+                <p class="producttitle">Corsair MP400 SSD</p>
+                <p class="productspecs">• 1 To<br>• 3.400 Mo/s reading<br>• 3.000 Mo/s writing<br>• NVMe PCIe x4 Gen3 interface</p>
+            </div>
+                <p class="productprice">$139.99</p>
+                <p class="stock instock">In stock</p>
+                <button class="purchasebutton"><i class="fa fa-cart-plus" aria-hidden="true"></i> Purchase</button>   
+        </div>
+        <div class="productcontainer">
+            <div id="productimg">
+              <img src="../ressources/products/disks/3_barracuda_seagate.png">
+            </div>
+            <div id="productcore">
+                <p class="producttitle">Seagate BarraCuda HDD</p>
+                <p class="productspecs">• 4 To<br>• 5400 rpm<br>• SATA connectivity<br>• 16 Mo stamp</p>
+            </div>
+                <p class="productprice">$89.99</p>
+                <p class="stock instock">In stock</p>
+                <button class="purchasebutton"><i class="fa fa-cart-plus" aria-hidden="true"></i> Purchase</button>   
+        </div>
+    </div>
+</body>
+
+<footer>
+    <ul class="bottombar">
+        <li class="libottombar"><a href="legalnotice.html">Legal notice</a></li>
+        <li class="libottombar"><a href="pivacypolicy.html">Privacy policy</a></li>
+        <li class="libottombar"><a href="contact.html">Contact</a></li>
+    </ul>
+</footer>
+
+</html>
