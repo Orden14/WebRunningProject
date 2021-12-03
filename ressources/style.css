@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  margin: 0px;
   background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,10 +32,6 @@ background:mediumpurple;
 
 header {
   font-family: "Audiowide", Times, serif;
-}
-
-body {
-  margin: 0px;
 }
 
 .topbar {
