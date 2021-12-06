@@ -105,15 +105,14 @@
   to {opacity: 1}
 }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 1150px) {
   .slideshow-container {
     width: 80%;
   }
   .imgresponsive {
       width: 100%;
       height: 60%;
-  }
-
+  } 
   .prev, .next {
     font-size: 4vw;
   }

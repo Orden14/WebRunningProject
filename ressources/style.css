@@ -120,7 +120,7 @@ header {
   float: right;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1150px) {
   .topbar a:not(:first-child), .productdropdown .productdropbtn {
     display: none;
   }
@@ -133,7 +133,7 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1150px) {
   .topbar.responsive {position: relative;}
   .topbar.responsive a.icon {
     position: absolute;
@@ -255,11 +255,14 @@ header {
   text-align: center;
  }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 1150px) {
   #homepagetextcontainer {
     max-width: 70%;
     min-width: 50%;
   }
+}
+
+@media screen and (max-width: 600px) {
   .mainpagebody {
     font-size: 5vw;
   }
@@ -318,7 +321,7 @@ header {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1150px) {
   .customerserviceul {
     display: block;
     text-align: center;
